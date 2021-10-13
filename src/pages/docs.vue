@@ -126,7 +126,6 @@ ADDRESS=your_mining_address'/>
 				<br>
 				<span class="italic">Example if your address was <span class="font-bold">APnd76ffhVQDsHyjwJj4SfD5TFy4Dgje8</span>.</span>
 				<Codeblock lang="js" code='ADDRESS=APnd76ffhVQDsHyjwJj4SfD5TFy4Dgje8'/>
-				<span class="italic">Make sure to use a unique address for each miner!</span>
 			</p>
 			<p>
 				If you are not hosting a Fullnode on localhost you will need to change the IP-address for the API endpoints to something that works.
