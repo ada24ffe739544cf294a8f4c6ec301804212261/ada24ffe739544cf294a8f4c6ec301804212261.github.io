@@ -15,6 +15,6 @@
 	// import Stats from './Stats.vue'
 	declare const GIT_COMMIT_HASH: string
 	declare const BUILT_AT: string
-	const gitCommit = ref(GIT_COMMIT_HASH)
+	// const gitCommit = ref(GIT_COMMIT_HASH)
 	const builtAt = ref(new Date(BUILT_AT).toUTCString())
 </script>
