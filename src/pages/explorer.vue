@@ -31,6 +31,7 @@
 			<a v-else target="_blank" href="https://github.com/viscoin/viscoin/blob/main/config/settings.json#L43&L52">Get References</a>
 		</div>
 		<input
+			ref="input"
 			class="
 				bg-gray-200
 				text-gray-800
@@ -235,6 +236,8 @@ export default {
 		}
 	},
 	mounted() {
+		this.$refs.input.focus()
+		this.$refs.input.select()
 		if (localStorage.nodes) {
 			this.nodes = JSON.parse(localStorage.nodes)
 		}

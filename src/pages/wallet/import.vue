@@ -13,6 +13,7 @@
             <h2>Import wallet</h2>
 		</div>
 		<input
+			ref="input"
             @keydown="import_wallet"
 			class="
 				bg-gray-200
@@ -79,6 +80,8 @@ export default {
 		},
 	},
 	mounted() {
+		this.$refs.input.focus()
+		this.$refs.input.select()
 		if (localStorage.keys) {
 			this.wallets = JSON.parse(localStorage.keys).map(key => {
 				const key_buffer = base58.decode(key)

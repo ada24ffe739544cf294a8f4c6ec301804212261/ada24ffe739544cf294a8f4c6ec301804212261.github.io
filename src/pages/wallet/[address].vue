@@ -167,6 +167,7 @@
 		<div v-if="show === '' && qr_address" class="flex justify-center">
 			<QRCode :data=qr_address />
 		</div>
+		<Button class="w-20 mx-auto" text="share" @click="share" />
 	</div>
 </template>
 <script>
@@ -217,15 +218,6 @@ export default {
 			this.wallets = this.wallets.filter(e => e.address !== this.address)
 			this.wallet = null
 			this.$router.push('/wallet')
-		},
-		add_node() {
-			if (!this.node_input) return
-			if (this.nodes.includes(this.node_input)) return
-			this.nodes.push(this.node_input)
-			this.node_input = ''
-		},
-		remove_node() {
-			this.nodes = this.nodes.filter(e => e !== this.node_input)
 		},
 		async share() {
 			const data = this.address
