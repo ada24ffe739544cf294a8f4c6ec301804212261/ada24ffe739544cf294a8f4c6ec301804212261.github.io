@@ -167,7 +167,7 @@
 		<div v-if="show === '' && qr_address" class="flex justify-center">
 			<QRCode :data=qr_address />
 		</div>
-		<Button class="w-20 mx-auto" text="share" @click="share" />
+		<Button class="w-20 mx-auto" text="Share" @click="share" />
 	</div>
 </template>
 <script>
@@ -220,8 +220,8 @@ export default {
 			this.$router.push('/wallet')
 		},
 		async share() {
-			const data = this.address
-			console.log(data)
+			const data = this.qr_address
+			// console.log(data)
 			const settings = { errorCorrectionLevel: 'H', color: { dark: '000000', light: 'ffffff' } }
 			const b64toBlob = (dataURI) => {
 				let byteString = atob(dataURI.split(',')[1])
