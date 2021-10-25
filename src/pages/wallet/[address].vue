@@ -41,7 +41,7 @@
 		<div style="user-select: none;" class="flex flex-row justify-evenly w-full">
 			<Button text="Transaction" v-on:click="show = show === 'transaction' ? show='' : 'transaction'" />
 			<!-- <Button text="Receive" v-on:click="show = ''" /> -->
-			<router-link :to="'/explorer?search=balance/' + wallet.address">
+			<router-link :to="'/api?search=balance/' + wallet.address">
 				<Button
 					class="mx-auto"
 					text="Balance" />
@@ -122,7 +122,7 @@
 				"
 				v-model=transaction_str
 			name="" id="" cols="30" rows="6"></textarea>
-			<router-link target="_blank" v-if=transaction_json :to="'/explorer?search=' + transaction_json">
+			<router-link target="_blank" v-if=transaction_json :to="'/api?search=' + transaction_json">
 				<Button
 					class="mx-auto"
 					text="Broadcast" />
@@ -245,6 +245,7 @@ export default {
 		}
 	},
 	mounted() {
+		document.title = 'Viscoin.net - Wallet - ' + this.$route.params.address
 		if (localStorage.keys) {
 			this.wallets = JSON.parse(localStorage.keys).map(key => {
 				const key_buffer = base58.decode(key)

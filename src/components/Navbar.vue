@@ -254,16 +254,16 @@
 				text: 'Wallet'
 			},
 			{
-				to: '/explorer',
-				text: 'Explorer'
-			},
-			{
 				to: '/docs',
 				text: 'Documentation'
 			},
 			{
 				to: '/community',
 				text: 'Community'
+			},
+			{
+				to: '/api',
+				text: 'API'
 			}
 		],
 		href: [
@@ -274,6 +274,10 @@
 			{
 				href: 'https://discord.gg/wnJ2BCmaja',
 				text: 'Discord'
+			},
+			{
+				href: 'https://vis.gg',
+				text: 'Explorer'
 			}
 		]
 	}

@@ -15,3 +15,10 @@
 		<p>Unless you’ve got a time machine, that content is unavailable.</p>
 	</div>
 </template>
+<script>
+export default {
+	mounted() {
+		document.title = 'Viscoin.net - 404'
+	}
+}
+</script>

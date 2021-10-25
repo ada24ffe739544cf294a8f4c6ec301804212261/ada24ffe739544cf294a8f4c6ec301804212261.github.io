@@ -205,5 +205,10 @@ HiddenServicePort 9333 127.0.0.1:9333'/>
 		</div>
 	</div>
 </template>
-<script setup lang="ts">
+<script>
+export default {
+	mounted() {
+		document.title = 'Viscoin.net - Documentation'
+	}
+}
 </script>

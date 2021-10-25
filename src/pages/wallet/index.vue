@@ -154,6 +154,7 @@ export default {
 		}
 	},
 	mounted() {
+		document.title = 'Viscoin.net - Wallet'
 		if (localStorage.keys) {
 			this.wallets = JSON.parse(localStorage.keys).map(key => {
 				const key_buffer = base58.decode(key)

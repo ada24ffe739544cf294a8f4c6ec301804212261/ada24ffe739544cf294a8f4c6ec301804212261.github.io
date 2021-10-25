@@ -22,11 +22,14 @@
 				Viscoin is an experimental digital currency that enables instant payments to anyone, anywhere in the world. Viscoin uses peer-to-peer technology to operate with no central authority: managing transactions and issuing money are carried out collectively by the network.
 			</p>
 			<div class="flex justify-center gap-10 mb-10">
-				<router-link
-					to="/explorer"
+				<!-- <router-link
+					to="/api"
 				>
-					<Button text="Open Explorer" />
-				</router-link>
+					<Button text="Open API" />
+				</router-link> -->
+				<a href="https://vis.gg">
+					<Button class="bg-purple-600 hover:bg-purple-700" text="Open Explorer" />
+				</a>
 				<router-link
 					to="/wallet"
 				>
@@ -72,5 +75,10 @@
 		</div>
 	</div>
 </template>
-<script setup lang="ts">
+<script>
+export default {
+	mounted() {
+		document.title = 'Viscoin.net'
+	}
+}
 </script>

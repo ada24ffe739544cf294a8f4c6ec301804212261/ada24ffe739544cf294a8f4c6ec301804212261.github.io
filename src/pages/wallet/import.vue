@@ -80,6 +80,7 @@ export default {
 		},
 	},
 	mounted() {
+		document.title = 'Viscoin.net - Wallet - Import'
 		this.$refs.input.focus()
 		this.$refs.input.select()
 		if (localStorage.keys) {

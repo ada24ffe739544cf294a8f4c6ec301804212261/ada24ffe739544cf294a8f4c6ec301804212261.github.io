@@ -34,5 +34,10 @@
 		</div>
 	</div>
 </template>
-<script setup lang="ts">
+<script>
+export default {
+	mounted() {
+		document.title = 'Viscoin.net - Community'
+	}
+}
 </script>

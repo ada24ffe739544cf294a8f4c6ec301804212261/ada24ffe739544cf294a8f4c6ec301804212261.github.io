@@ -12,7 +12,7 @@
     >
 		<div class="flex justify-between">
 			<div class="flex flex-col">
-				<h3>Explorer - API tool</h3>
+				<h3>Explorer (Legacy)</h3>
 				<p style="font-size: 1rem;">
 					This tool aims to make it easier to interact with any Viscoin node's HTTP API.
 				</p>
@@ -236,6 +236,7 @@ export default {
 		}
 	},
 	mounted() {
+		document.title = 'Viscoin.net - Explorer (Legacy)'
 		this.$refs.input.focus()
 		this.$refs.input.select()
 		if (localStorage.nodes) {

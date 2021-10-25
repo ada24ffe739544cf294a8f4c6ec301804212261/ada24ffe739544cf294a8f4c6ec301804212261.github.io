@@ -30,8 +30,8 @@ export default defineConfig({
 			strategies: 'injectManifest',
 			registerType: 'autoUpdate',
 			manifest: {
-				theme_color: '#090a16',
-				background_color: '#090a16',
+				theme_color: '#1c1c1e',
+				background_color: '#1c1c1e',
 				name: 'Viscoin',
 				short_name: 'Viscoin',
 				start_url: '.',
