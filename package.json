@@ -1,5 +1,5 @@
 {
-  "name": "0s8.github.io",
+  "name": "2f294c2aa6b86e76498775e431100f2310c65f540980cc70711b90fa32a5d9eb8c2220b66fb6909c4ec991a029246e87e503",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,13 +14,13 @@
   "homepage": "https://viscoin.net/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/0s8/0s8.github.io.git"
+    "url": "git+https://github.com/0s8/2f294c2aa6b86e76498775e431100f2310c65f540980cc70711b90fa32a5d9eb8c2220b66fb6909c4ec991a029246e87e503.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/0s8/0s8.github.io/issues"
+    "url": "https://github.com/0s8/2f294c2aa6b86e76498775e431100f2310c65f540980cc70711b90fa32a5d9eb8c2220b66fb6909c4ec991a029246e87e503/issues"
   },
   "dependencies": {
     "@headlessui/vue": "^1.4.0",
