@@ -260,20 +260,12 @@
 			{
 				to: '/community',
 				text: 'Community'
-			},
-			{
-				to: '/api',
-				text: 'API'
 			}
 		],
 		href: [
 			{
 				href: 'https://github.com/viscoin/viscoin',
 				text: 'Github'
-			},
-			{
-				href: 'https://discord.gg/wnJ2BCmaja',
-				text: 'Discord'
 			},
 			{
 				href: 'https://vis.gg',

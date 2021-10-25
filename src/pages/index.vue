@@ -28,7 +28,7 @@
 					<Button text="Open API" />
 				</router-link> -->
 				<a href="https://vis.gg">
-					<Button class="bg-purple-600 hover:bg-purple-700" text="Open Explorer" />
+					<Button text="Open Explorer" />
 				</a>
 				<router-link
 					to="/wallet"
