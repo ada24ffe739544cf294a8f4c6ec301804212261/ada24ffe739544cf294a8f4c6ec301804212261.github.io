@@ -25,23 +25,35 @@
 			w-full
 		"
 	>
-		<h3 v-if="show === ''">Wallet</h3>
+		<h3 class="flex justify-between">
+			<span v-if="show === ''">Wallet</span>
+			<span v-if="show === 'transaction'">Create Transaction</span>
+			<span v-if="show === 'private_key'">Private Key</span>
+			<ToggleButton :defaultState=explorer labelEnableText="Vis.gg" labelDisableText="API (Legacy)"
+				v-on:change="toggle_explorer" />
+		</h3>
+		<!-- <h3 v-if="show === ''">Wallet</h3> -->
 		<p v-if="show === ''" style="font-size: 1rem;">
 			Here you can send, receive and store Viscoin.
 		</p>
-		<h3 v-if="show === 'transaction'">Create Transaction</h3>
+		<!-- <h3 v-if="show === 'transaction'">Create Transaction</h3> -->
 		<p v-if="show === 'transaction'" style="font-size: 1rem;">
 			Create a transaction by filling in the required fields and signing the transaction.
 			You can then click Broadcast which will redirect you to the API tool.
 		</p>
-		<h3 v-if="show === 'private_key'">Private Key</h3>
+		<!-- <h3 v-if="show === 'private_key'">Private Key</h3> -->
 		<p v-if="show === 'private_key'" style="font-size: 1rem;">
 			Your Private Key is sensitive information. Do not share it with anyone unless you want them to be granted full access to the coins on your wallet.
 		</p>
 		<div style="user-select: none;" class="flex flex-row justify-evenly w-full">
 			<Button text="Transaction" v-on:click="show = show === 'transaction' ? show='' : 'transaction'" />
 			<!-- <Button text="Receive" v-on:click="show = ''" /> -->
-			<router-link :to="'/api?search=balance/' + wallet.address">
+			<a v-if="explorer" :href="'https://vis.gg/#/explorer/' + wallet.address">
+				<Button
+					class="mx-auto bg-indigo-600 hover:bg-indigo-700"
+					text="Balance" />
+			</a>
+			<router-link v-else :to="'/api?search=balance/' + wallet.address">
 				<Button
 					class="mx-auto"
 					text="Balance" />
@@ -103,6 +115,7 @@
 				v-model=transaction.miner_fee
 				type="text" placeholder="Enter miner fee...">
 			<Button
+				style="user-select: none;"
 				class="mx-auto mb-10"
 				@click="sign_transaction" text="Sign transaction" />
 			<textarea
@@ -122,8 +135,15 @@
 				"
 				v-model=transaction_str
 			name="" id="" cols="30" rows="6"></textarea>
-			<router-link target="_blank" v-if=transaction_json :to="'/api?search=' + transaction_json">
+			<a v-if="explorer && transaction_json" :href="'https://vis.gg/#/search/' + transaction_json">
 				<Button
+					style="user-select: none;"
+					class="mx-auto bg-indigo-600 hover:bg-indigo-700"
+					text="Broadcast" />
+			</a>
+			<router-link v-else-if=transaction_json :to="'/api?search=' + transaction_json">
+				<Button
+					style="user-select: none;"
 					class="mx-auto"
 					text="Broadcast" />
 			</router-link>
@@ -158,16 +178,16 @@
 				<QRCode :data=qr_key />
 			</div> -->
 		</div>
-		<div v-if="show === '' && qr_address" class="flex justify-center mt-6">
+		<!-- <div v-if="show === '' && qr_address" class="flex justify-center mt-6">
 			<div class="flex flex-col justify-center center align-center">
 				<div style="font-size: 1rem;" class="mx-auto">Scan address QR</div>
 				<div style="font-size: .8rem;" class="mx-auto">{{ qr_address }}</div>
 			</div>
-		</div>
-		<div v-if="show === '' && qr_address" class="flex justify-center">
+		</div> -->
+		<!-- <div v-if="show === '' && qr_address" class="flex justify-center">
 			<QRCode :data=qr_address />
-		</div>
-		<Button class="w-20 mx-auto" text="Share" @click="share" />
+		</div> -->
+		<!-- <Button class="w-20 mx-auto" text="Share" @click="share" /> -->
 	</div>
 </template>
 <script>
@@ -188,10 +208,15 @@ export default {
 			},
 			transaction_str: '',
 			transaction_json: '',
-			show: ''
+			show: '',
+			explorer: true
 		}
 	},
 	methods: {
+		toggle_explorer(e) {
+			if (typeof e !== 'boolean') return
+			this.explorer = e
+		},
 		sign_transaction() {
 			this.transaction_json = null
 			try {

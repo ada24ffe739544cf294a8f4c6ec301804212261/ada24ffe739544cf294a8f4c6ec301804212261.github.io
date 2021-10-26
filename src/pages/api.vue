@@ -27,8 +27,8 @@
 		</div>
 		<div style="font-size: 0.8rem;">
 			{{ post_get ? 'Post data' : 'Search query' }},
-			<a v-if=post_get target="_blank" href="https://github.com/viscoin/viscoin/blob/main/config/settings.json#L55&L56">Post References</a>
-			<a v-else target="_blank" href="https://github.com/viscoin/viscoin/blob/main/config/settings.json#L43&L52">Get References</a>
+			<a v-if=post_get href="https://github.com/viscoin/viscoin/blob/main/config/settings.json#L55&L56">Post References</a>
+			<a v-else href="https://github.com/viscoin/viscoin/blob/main/config/settings.json#L43&L52">Get References</a>
 		</div>
 		<input
 			ref="input"

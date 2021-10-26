@@ -48,7 +48,6 @@
 						focus:outline-none
 						focus-visible:ring-1 focus:ring-white dark:focus:ring-black
 					"
-					target="_blank"
 					rel="noopener"
 				>
 					<span class="mr-2">Open Viscoin Documentation</span><heroicons-outline-external-link class="h-5 w-5" />
@@ -77,7 +76,6 @@
 						focus:outline-none
 						focus-visible:ring-1 focus:ring-white dark:focus:ring-black
 					"
-					target="_blank"
 					rel="noopener"
 				>
 					<span class="mr-2">Open Bot Documentation</span><heroicons-outline-external-link class="h-5 w-5" />
