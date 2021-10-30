@@ -147,12 +147,14 @@
 					<Button
 						style="user-select: none;"
 						class="mx-auto bg-indigo-600 hover:bg-indigo-700"
+						@click="sign_transaction"
 						text="Sign & Broadcast" />
 				</a>
 				<router-link v-else-if=transaction_json :to="'/api?search=' + transaction_json">
 					<Button
 						style="user-select: none;"
 						class="mx-auto"
+						@click="sign_transaction"
 						text="Sign & Broadcast" />
 				</router-link>
 			</div>
