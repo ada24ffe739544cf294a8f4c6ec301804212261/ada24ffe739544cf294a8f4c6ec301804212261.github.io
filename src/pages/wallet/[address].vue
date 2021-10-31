@@ -3,13 +3,13 @@
 		flex
 		flex-col
 		justify-between h-full
+		mx-6
 	">
 		<div
 			class="
 				prose prose-discord
 				dark:prose-light
 				lg:prose-lg
-				px-6
 				mx-auto
 				pb-8
 				w-full
@@ -18,8 +18,8 @@
 		>
 			<h4 class="flex justify-between">
 				<span>{{ this.faces[Math.floor(Math.random() * this.faces.length)] }}</span>
-				<span v-if="show === 'transaction'">Send</span>
-				<span v-if="show === 'private_key'">Private</span>
+				<!-- <span v-if="show === 'transaction'">Send</span>
+				<span v-if="show === 'private_key'">Private</span> -->
 				<ToggleButton :defaultState=explorer labelEnableText="Vis.gg" labelDisableText="Legacy"
 					v-on:change="toggle_explorer" />
 			</h4>
@@ -35,7 +35,7 @@
 		<div
 			v-if="show === ''"
 			class="
-				max-w-3xl sm:mx-auto text-center px-8 sm:px-16 flex flex-col gap-10 py-10 md:px-12
+				max-w-3xl sm:mx-auto text-center sm:px-16 flex flex-col gap-10 md:px-12
 			"
 		>
 			<WalletAddress
@@ -57,21 +57,19 @@
 				prose prose-discord
 				dark:prose-light
 				lg:prose-lg
-				px-6
 				mx-auto
-				pb-8
 				w-full
 			"
 		>
 			<div
 				v-if="show==='transaction'"
 				class="
-					max-w-3xl sm:mx-auto px-8 sm:px-16 flex flex-col py-10 md:px-12
+					max-w-3xl sm:mx-auto sm:px-16 flex flex-col md:px-12
 				"
 			>
 				<div class="flex flex-col sm:flex-row justify-between mb-10">
 					<strong>Sending&nbsp;from</strong>
-					<span>{{ this.address }}</span>
+					<span class="underline">{{ this.address }}</span>
 				</div>
 				<label style="font-size: .8rem;" for="address">The base58 address of the recipient.</label>
 				<input
@@ -161,7 +159,7 @@
 			<div
 				v-if="show==='private_key'"
 				class="
-					max-w-3xl sm:mx-auto text-center px-8 sm:px-16 flex flex-col gap-10 py-10 md:px-12
+					max-w-3xl sm:mx-auto text-center sm:px-16 flex flex-col gap-10 md:px-12
 				"
 			>
 				<div class="flex flex-row justify-center">
@@ -198,7 +196,7 @@
 				<QRCode :data=qr_address />
 			</div> -->
 			<!-- <Button class="w-20 mx-auto" text="Share" @click="share" /> -->
-			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-evenly w-full">
+			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-evenly w-full py-10">
 				<Button text="Create Transaction" v-on:click="show = show === 'transaction' ? show='' : 'transaction'" />
 				<a v-if="explorer" :href="'https://vis.gg/#/explorer/' + wallet.address">
 					<Button
