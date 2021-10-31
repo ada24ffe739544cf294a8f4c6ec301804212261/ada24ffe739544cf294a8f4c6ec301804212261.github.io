@@ -80,7 +80,7 @@
 			</div>
 			<Button class="w-20 mx-auto" text="Share" @click="share" />
 		</div> -->
-		<div v-if="show === ''" class="py-10"></div>
+		<div style="user-select: none;" v-if="show === ''" class="py-10"></div>
 		<div
 			v-if="wallet"
 			class="
@@ -171,14 +171,18 @@
 					"
 					v-model=transaction_str
 				name="" id="" cols="30" rows="6"></textarea>
-				<a v-if="explorer && transaction_json" :href="'https://vis.gg/#/search/' + transaction_json">
+				<a v-if="explorer && transaction_json" :href="'https://vis.gg/#/search/' + transaction_json"
+					class="pb-10"
+				>
 					<Button
 						style="user-select: none;"
 						class="mx-auto bg-indigo-600 hover:bg-indigo-700"
 						@click="sign_transaction"
 						text="Sign & Broadcast" />
 				</a>
-				<router-link v-else-if=transaction_json :to="'/api?search=' + transaction_json">
+				<router-link v-else-if=transaction_json :to="'/api?search=' + transaction_json"
+					class="pb-10"
+				>
 					<Button
 						style="user-select: none;"
 						class="mx-auto"
