@@ -42,15 +42,44 @@
 				title="address (public)"
 				class="max-w-screen-sm
 				filter drop-shadow-lg mx-auto
-					pb-40
 				" :address=wallet?.address />
 				<!-- <Button @click="show_qr_code = !show_qr_code" class="mx-auto" text="QR" /> -->
 				<!-- <a :href=qr_url class="w-10 mx-auto" >
 					<img @click="show_qr_code = !show_qr_code"
 						src="qrcode-solid.svg" alt="">
-				</a> -->
-				<!-- <Button @click="share" text="Share" class="mx-auto" /> -->
+				</a>
+				<Button @click="share" text="Share" class="mx-auto" /> -->
+				<!-- <div v-if="show === '' && qr_address" class="flex justify-center">
+					<div class="flex flex-col justify-center center align-center">
+						<div style="font-size: 1rem;" class="mx-auto">Scan address QR</div>
+						<div style="font-size: .8rem;" class="mx-auto">{{ qr_address }}</div>
+					</div>
+				</div> -->
+				<div v-if="show === '' && qr_address" class="flex justify-center">
+					<QRCode :data=qr_address />
+				</div>
+				<!-- <Button class="w-20 mx-auto" text="Share" @click="share" /> -->
 		</div>
+		<!-- <div
+			class="
+				prose prose-discord
+				dark:prose-light
+				lg:prose-lg
+				mx-auto
+				w-full
+			"
+		>
+			<div v-if="show === '' && qr_address" class="flex justify-center">
+				<div class="flex flex-col justify-center center align-center">
+					<div style="font-size: 1rem;" class="mx-auto">Scan address QR</div>
+					<div style="font-size: .8rem;" class="mx-auto">{{ qr_address }}</div>
+				</div>
+			</div>
+			<div v-if="show === '' && qr_address" class="flex justify-center">
+				<QRCode :data=qr_address />
+			</div>
+			<Button class="w-20 mx-auto" text="Share" @click="share" />
+		</div> -->
 		<div
 			v-if="wallet"
 			class="
@@ -186,17 +215,7 @@
 					<QRCode :data=qr_key />
 				</div> -->
 			</div>
-			<!-- <div v-if="show === '' && qr_address" class="flex justify-center mt-6">
-				<div class="flex flex-col justify-center center align-center">
-					<div style="font-size: 1rem;" class="mx-auto">Scan address QR</div>
-					<div style="font-size: .8rem;" class="mx-auto">{{ qr_address }}</div>
-				</div>
-			</div> -->
-			<!-- <div v-if="show === '' && qr_address" class="flex justify-center">
-				<QRCode :data=qr_address />
-			</div> -->
-			<!-- <Button class="w-20 mx-auto" text="Share" @click="share" /> -->
-			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-evenly w-full py-10">
+			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-evenly w-full pb-10 pt-20 md:pt-40">
 				<Button text="Create Transaction" v-on:click="show = show === 'transaction' ? show='' : 'transaction'" />
 				<a v-if="explorer" :href="'https://vis.gg/#/explorer/' + wallet.address">
 					<Button
@@ -209,11 +228,11 @@
 						text="Check Balance" />
 				</router-link>
 			</div>
-		</div>
-		<div>
-			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-evenly w-full mb-10">
+			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-evenly w-full">
 				<Button text="Private Key" v-on:click="show = show === 'private_key' ? show='' : 'private_key'" />
 			</div>
+		</div>
+		<div class="py-8">
 		</div>
 	</div>
 </template>

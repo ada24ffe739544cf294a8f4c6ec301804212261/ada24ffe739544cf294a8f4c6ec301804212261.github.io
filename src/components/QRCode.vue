@@ -2,7 +2,7 @@
     <img ref="img" style="image-rendering: auto;
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;" src="" alt=""
-	class="cursor-pointer w-full"
+	class="cursor-pointer max-w-80"
 	title="Click to zoom"
 	@click="resize" >
 </template>
