@@ -29,13 +29,13 @@ export default {
 		},
 		resize() {
 			const classList = this.$refs.img.classList
-			if (classList.contains('w-40')) classList.remove('w-40')
-			else classList.add('w-40')
+			if (classList.contains('w-20')) classList.remove('w-20')
+			else classList.add('w-20')
 		}
 	},
 	mounted() {
 		this.render()
-		this.$refs.img.classList.add('w-40')
+		this.$refs.img.classList.add('w-20')
 	},
 	watch: {
 		isDarkMode: {

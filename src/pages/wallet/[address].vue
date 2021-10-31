@@ -55,7 +55,7 @@
 						<div style="font-size: .8rem;" class="mx-auto">{{ qr_address }}</div>
 					</div>
 				</div> -->
-				<div v-if="show === '' && qr_address" class="flex justify-center">
+				<div style="user-select: none;" v-if="show === '' && qr_address" class="flex justify-center">
 					<QRCode :data=qr_address />
 				</div>
 				<!-- <Button class="w-20 mx-auto" text="Share" @click="share" /> -->
@@ -80,6 +80,7 @@
 			</div>
 			<Button class="w-20 mx-auto" text="Share" @click="share" />
 		</div> -->
+		<div v-if="show === ''" class="py-10"></div>
 		<div
 			v-if="wallet"
 			class="
@@ -215,7 +216,7 @@
 					<QRCode :data=qr_key />
 				</div> -->
 			</div>
-			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-evenly w-full pb-10 pt-20 md:pt-40">
+			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-center gap-10 w-full">
 				<Button text="Create Transaction" v-on:click="show = show === 'transaction' ? show='' : 'transaction'" />
 				<a v-if="explorer" :href="'https://vis.gg/#/explorer/' + wallet.address">
 					<Button
@@ -228,12 +229,11 @@
 						text="Check Balance" />
 				</router-link>
 			</div>
-			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-evenly w-full">
+			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-center w-full my-5 pb-10">
 				<Button text="Private Key" v-on:click="show = show === 'private_key' ? show='' : 'private_key'" />
 			</div>
 		</div>
-		<div class="py-8">
-		</div>
+		<div v-if="show !== ''"></div>
 	</div>
 </template>
 <script>
