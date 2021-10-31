@@ -7,58 +7,52 @@
 	">
 		<div
 			class="
-				prose prose-discord
-				dark:prose-light
-				lg:prose-lg
-				mx-auto
-				pb-8
+				flex flex-col
 				w-full
-				mt-8
 			"
 		>
-			<h4 class="flex justify-between">
-				<span>{{ this.faces[Math.floor(Math.random() * this.faces.length)] }}</span>
-				<!-- <span v-if="show === 'transaction'">Send</span>
-				<span v-if="show === 'private_key'">Private</span> -->
-				<ToggleButton :defaultState=explorer labelEnableText="Vis.gg" labelDisableText="Legacy"
-					v-on:change="toggle_explorer" />
-			</h4>
-			<div class="pt-10">
+			<div
+				class="
+					prose prose-discord
+					dark:prose-light
+					lg:prose-lg
+					mx-auto
+					pb-8
+					w-full
+					mt-8
+				"
+			>
+				<h4 class="flex justify-between">
+					<router-link v-if="show === ''" to="/wallet">
+						<span>Back</span>
+					</router-link>
+					<router-link v-else :to="'/wallet/' + this.address" @click="this.show = ''">
+						<span>Back</span>
+					</router-link>
+					<!-- <span>{{ this.faces[Math.floor(Math.random() * this.faces.length)] }}</span> -->
+					<!-- <span v-if="show === 'transaction'">Send</span>
+					<span v-if="show === 'private_key'">Private</span> -->
+					<ToggleButton :defaultState=explorer labelEnableText="Vis.gg" labelDisableText="Legacy"
+						v-on:change="toggle_explorer" />
+				</h4>
+			</div>
+			<!-- <div class="pt-10">
 				<router-link v-if="show === ''" to="/wallet">
 					<span>Back</span>
 				</router-link>
 				<router-link v-else :to="'/wallet/' + this.address" @click="this.show = ''">
 					<span>Back</span>
 				</router-link>
-			</div>
-		</div>
-		<div
-			v-if="show === ''"
-			class="
-				max-w-3xl sm:mx-auto text-center sm:px-16 flex flex-col gap-10 md:px-12
-			"
-		>
+			</div> -->
 			<WalletAddress
+				v-if="show === ''"
 				title="address (public)"
 				class="max-w-screen-sm
 				filter drop-shadow-lg mx-auto
 				" :address=wallet?.address />
-				<!-- <Button @click="show_qr_code = !show_qr_code" class="mx-auto" text="QR" /> -->
-				<!-- <a :href=qr_url class="w-10 mx-auto" >
-					<img @click="show_qr_code = !show_qr_code"
-						src="qrcode-solid.svg" alt="">
-				</a>
-				<Button @click="share" text="Share" class="mx-auto" /> -->
-				<!-- <div v-if="show === '' && qr_address" class="flex justify-center">
-					<div class="flex flex-col justify-center center align-center">
-						<div style="font-size: 1rem;" class="mx-auto">Scan address QR</div>
-						<div style="font-size: .8rem;" class="mx-auto">{{ qr_address }}</div>
-					</div>
-				</div> -->
-				<div style="user-select: none;" v-if="show === '' && qr_address" class="flex justify-center">
-					<QRCode :data=qr_address />
-				</div>
-				<!-- <Button class="w-20 mx-auto" text="Share" @click="share" /> -->
+			<div style="user-select: none;" v-if="show === '' && qr_address" class="flex justify-center mt-10 mb-20">
+				<QRCode :data=qr_address />
+			</div>
 		</div>
 		<!-- <div
 			class="
@@ -80,7 +74,7 @@
 			</div>
 			<Button class="w-20 mx-auto" text="Share" @click="share" />
 		</div> -->
-		<div style="user-select: none;" v-if="show === ''" class="py-10"></div>
+		<!-- <div style="user-select: none;" v-if="show === ''" class="py-10"></div> -->
 		<div
 			v-if="wallet"
 			class="
