@@ -50,7 +50,7 @@
 			</p>
 			<h3>Source code</h3>
 			<p>
-				Viscoin source code is 100% Typescript. Viscoin has a target block time of 1 minute. Every time a block is mined the miner is rewarded with 1000 ℣ newly generated coins + transaction fees from all the transactions in the block. The difficulty is adjusted every time a block is mined.
+				Viscoin source code is 100% Typescript. Viscoin has a target block time of 1 minute. Every time a block is mined the miner is rewarded with 1 newly generated viscoin + transaction fees from all the transactions in the block. The difficulty is adjusted every time a block is mined.
 			</p>
 			<router-link
 				to="/docs"
