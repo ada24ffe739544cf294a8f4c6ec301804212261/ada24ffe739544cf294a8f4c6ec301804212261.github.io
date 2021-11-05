@@ -297,7 +297,7 @@ export default {
 				transaction.sign(base58.decode(privateKey))
 				const code = transaction.isValid()
 				if (code) throw new Error(`Transaction invalid 0b${code.toString(2)}`)
-				this.transaction_str = JSON.stringify(Transaction.minify(transaction))
+				this.transaction_str = 'TX_' + Buffer.from(JSON.stringify(transaction)).toString('hex')
 				this.transaction_json = this.transaction_str
 			}
 			catch (err) {
