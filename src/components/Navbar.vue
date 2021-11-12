@@ -262,10 +262,6 @@
 		],
 		href: [
 			{
-				href: '/Viscoin.pdf',
-				text: 'Litepaper'
-			},
-			{
 				href: 'https://github.com/viscoin/viscoin',
 				text: 'Github'
 			},
