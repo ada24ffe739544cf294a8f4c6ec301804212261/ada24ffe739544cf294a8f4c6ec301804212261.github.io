@@ -1,0 +1,1 @@
+import{_ as o}from"./index.871504d6.js";import{f as t,o as n,h as r}from"./vendor.309dbb5d.js";const s={mounted(){document.title="Viscoin.net - Community"}};function c(a,d,p,i,f,m){const e=t("Object");return n(),r(e,{class:"w-full h-full",data:"/Viscoin.pdf",frameborder:"0"})}var u=o(s,[["render",c]]);export{u as default};
