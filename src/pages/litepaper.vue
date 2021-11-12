@@ -1,10 +1,10 @@
 <template>
-    <iframe
+    <Object
         class="
             w-full
             h-full
         "
-    src="/Viscoin.pdf" frameborder="0"></iframe>
+    data="/Viscoin.pdf" frameborder="0"></Object>
 </template>
 <script>
 export default {
