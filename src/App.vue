@@ -5,7 +5,7 @@
 			<div class="bg-white dark:bg-gray-900">
 				<router-view />
 			</div>
-			<Footer />
+			<!-- <Footer /> -->
 		</div>
 	</div>
 	<SWBanner />

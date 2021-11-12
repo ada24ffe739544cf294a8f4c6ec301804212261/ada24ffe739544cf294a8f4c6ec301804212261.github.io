@@ -9,7 +9,7 @@
 <script>
 export default {
 	mounted() {
-		document.title = 'Viscoin.net - Community'
+		document.title = 'Viscoin.net - Litepaper'
 	}
 }
 </script>
