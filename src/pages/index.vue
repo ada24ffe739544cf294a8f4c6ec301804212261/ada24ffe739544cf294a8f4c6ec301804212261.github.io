@@ -19,24 +19,50 @@
 		<div class="col-span-full">
 			<h2>Viscoin</h2>
 			<p>
-				Viscoin is an experimental digital currency that enables instant payments to anyone, anywhere in the world. Viscoin uses peer-to-peer technology to operate with no central authority: managing transactions and issuing money are carried out collectively by the network.
+				Viscoin is an experimental digital currency that lives on the internet. Payments can be made by anyone, to anyone, at any time, anywhere in the world, and are carried out collectively by the network with the use of peer-to-peer technology. Cryptography makes trusting a central authority obsolete when anyone with a computer can verify that a transaction is valid.
 			</p>
-			<div class="flex justify-center gap-10 mb-10">
+			<div class="flex justify-center gap-10 mb-6">
+				<!-- <a href="/Viscoin.pdf">
+					<Button text="Litepaper" />
+				</a>
+				<router-link
+					to="/docs"
+				>
+					<Button class="mx-auto" text="Documentation" />
+				</router-link> -->
 				<!-- <router-link
 					to="/api"
 				>
 					<Button text="Open API" />
 				</router-link> -->
-				<a href="https://vis.gg">
-					<Button class="bg-indigo-600 hover:bg-indigo-700" text="Open Explorer" />
+				<a href="https://github.com/viscoin/viscoin">
+					<Button class="bg-indigo-600 hover:bg-indigo-700" text="Github" />
 				</a>
-				<router-link
+				<a href="https://vis.gg">
+					<Button class="bg-indigo-600 hover:bg-indigo-700" text="Explorer" />
+				</a>
+				<!-- <router-link
 					to="/wallet"
 				>
 					<Button text="Open Wallet" />
+				</router-link> -->
+			</div>
+			<div class="flex justify-center gap-10 mb-6">
+				<a href="/Viscoin.pdf">
+					<Button text="Litepaper" />
+				</a>
+				<!-- <router-link
+					to="/docs"
+				>
+					<Button class="mx-auto" text="Documentation" />
+				</router-link> -->
+				<router-link
+					to="/wallet"
+				>
+					<Button text="Wallet" />
 				</router-link>
 			</div>
-			<h3>You own your money</h3>
+			<!-- <h3>You own your money</h3>
 			<p>
 				Start sending and receiving Viscoin today. Creating a wallet is as easy as rolling a dice, quite literally. A wallet can be generated offline. Be your own bank. Chargebacks are a thing of the past. No need for middlemen. Tap into the global market at the speed of light.
 			</p>
@@ -51,12 +77,17 @@
 			<h3>Source code</h3>
 			<p>
 				Viscoin source code is 100% Typescript. Viscoin has a target block time of 1 minute. Every time a block is mined the miner is rewarded with 1 newly generated viscoin + transaction fees from all the transactions in the block. The difficulty is adjusted every time a block is mined.
-			</p>
-			<router-link
-				to="/docs"
-			>
-				<Button class="mx-auto" text="Documentation" />
-			</router-link>
+			</p> -->
+			<!-- <div class="flex justify-center gap-10 mb-10 mt-5">
+				<a href="/Viscoin.pdf">
+					<Button text="Litepaper" />
+				</a>
+				<router-link
+					to="/docs"
+				>
+					<Button class="mx-auto" text="Documentation" />
+				</router-link>
+			</div> -->
 		</div>
 		<div>
 			<h2>Why?</h2>
