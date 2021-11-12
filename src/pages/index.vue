@@ -48,14 +48,11 @@
 				</router-link> -->
 			</div>
 			<div class="flex justify-center gap-10 mb-6">
-				<a href="/Viscoin.pdf">
-					<Button text="Litepaper" />
-				</a>
-				<!-- <router-link
-					to="/docs"
+				<router-link
+					to="/litepaper"
 				>
-					<Button class="mx-auto" text="Documentation" />
-				</router-link> -->
+					<Button text="Litepaper" />
+				</router-link>
 				<router-link
 					to="/wallet"
 				>

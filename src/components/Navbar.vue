@@ -248,6 +248,10 @@
 				text: 'Viscoin'
 			},
 			{
+				to: '/litepaper',
+				text: 'Paper'
+			},
+			{
 				to: '/wallet',
 				text: 'Wallet'
 			},
