@@ -8,6 +8,7 @@
 			py-20
 			h-full
 			col-span-full px-6 pb-80 pt-40
+			drop-shadow-lg
 		">
 			<h1 class="text-center">Welcome to Viscoin</h1>
 			<h3 class="text-center">Money made decentralized</h3>
