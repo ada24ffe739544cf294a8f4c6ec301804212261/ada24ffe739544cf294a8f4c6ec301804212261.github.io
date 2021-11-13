@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="flex justify-center align-middle">
-			<img class="w-80" src="/logo.svg" alt="">
+			<img class="w-60 lg:w-80" src="/logo.svg" alt="">
 		</div>
 	</div>
 	<div
@@ -67,7 +67,7 @@
 		style="background-color: #00ff9908;"
 	>
 		<div class="px-6 text-center mb-10">
-			<img class="w-80" src="/payment-16.svg" alt="">
+			<img class="w-60 lg:w-80" src="/payment-16.svg" alt="">
 		</div>
 		<div class="px-6">
 			<div class="text-center">
@@ -113,7 +113,7 @@
 			</div>
 		</div>
 		<div class="px-6 text-center mb-10">
-			<img class="w-80" src="/write-16.svg" alt="">
+			<img class="w-60 lg:w-80" src="/write-16.svg" alt="">
 		</div>
 		<div class="col-span-full flex justify-center">
 			<router-link
@@ -147,7 +147,7 @@
 			</div>
 		</div>
 		<div class="px-6 text-center mb-10">
-			<img class="w-80" src="/world-23.svg" alt="">
+			<img class="w-60 lg:w-80" src="/world-23.svg" alt="">
 		</div>
 	</div>
 	<div
@@ -164,8 +164,8 @@
 		style="background-color: #00ff6a08;"
 	>
 		<div class="px-6 text-center mb-10">
-			<!-- <img class="w-80" src="/world-23.svg" alt=""> -->
-			<img class="w-80" src="/blockchain.svg" alt="">
+			<!-- <img class="w-60 lg:w-80" src="/world-23.svg" alt=""> -->
+			<img class="w-60 lg:w-80" src="/blockchain.svg" alt="">
 		</div>
 		<div class="px-6">
 			<div class="text-center">
@@ -203,7 +203,7 @@
 			</div>
 		</div>
 		<div class="px-6 text-center mb-10">
-			<img class="w-80" src="/multi-agent-system.svg" alt="">
+			<img class="w-60 lg:w-80" src="/multi-agent-system.svg" alt="">
 		</div>
 		<div class="col-span-full flex justify-center">
 			<a href="https://github.com/viscoin/viscoin">
@@ -225,7 +225,7 @@
 		style="background-color: #9000ff08;"
 	>
 		<div class="px-6 text-center mb-10">
-			<img class="w-80" src="/growth-3.svg" alt="">
+			<img class="w-60 lg:w-80" src="/growth-3.svg" alt="">
 		</div>
 		<div class="px-6">
 			<div class="text-center">
