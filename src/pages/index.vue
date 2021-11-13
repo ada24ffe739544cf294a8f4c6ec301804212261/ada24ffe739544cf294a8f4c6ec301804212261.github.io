@@ -37,11 +37,9 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			dark:border-black
-			bg-gray-100
-			dark:bg-gray-800
 			py-40
 		"
+		style="background-color: #00aeff11;"
 	>
 		<div class="px-12">
 			<div class="text-center">
@@ -64,9 +62,9 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			dark:border-black
 			py-40
 		"
+		style="background-color: #00ff9908;"
 	>
 		<div class="px-6 text-center mb-10">
 			<img class="w-80" src="/payment-16.svg" alt="">
@@ -96,9 +94,9 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			dark:border-black
 			py-40
 		"
+		style="background-color: #ff800008;"
 	>
 		<div class="px-6">
 			<div class="">
@@ -134,11 +132,9 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			dark:border-black
-			bg-gray-100
-			dark:bg-gray-800
 			py-40
 		"
+		style="background-color: #ff00ee08;"
 	>
 		<div class="px-6">
 			<div class="text-center">
@@ -163,9 +159,9 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			dark:border-black
 			py-40
 		"
+		style="background-color: #00ff6a08;"
 	>
 		<div class="px-6 text-center mb-10">
 			<!-- <img class="w-80" src="/world-23.svg" alt=""> -->
@@ -194,9 +190,9 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			dark:border-black
 			py-40
 		"
+		style="background-color: #ff190008;"
 	>
 		<div class="px-6">
 			<div class="text-center">
@@ -224,11 +220,9 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			dark:border-black
-			bg-gray-100
-			dark:bg-gray-800
 			py-40
 		"
+		style="background-color: #9000ff08;"
 	>
 		<div class="px-6 text-center mb-10">
 			<img class="w-80" src="/growth-3.svg" alt="">
@@ -260,7 +254,6 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			dark:border-black
 			py-20
 		"
 	>
