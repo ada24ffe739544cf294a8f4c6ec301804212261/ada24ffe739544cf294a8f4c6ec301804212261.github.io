@@ -216,15 +216,14 @@
 		<div class="px-6">
 			<div class="">
 				<h2 class="text-center">Technical</h2>
-				<p>
-					
-				</p>
-				<ul>
-					<li>1 minute avg block time</li>
-					<li>1 Viscoin mining reward</li>
-					<li>Live since 2021-01-01 00:00:00</li>
-					<li>Argon2d ASIC resistant mining algorithm</li>
-				</ul>
+				<div class="prose prose-discord">
+					<ul>
+						<li>1 minute avg block time</li>
+						<li>1 Viscoin mining reward</li>
+						<li>Live since 2021-01-01 00:00:00</li>
+						<li>Argon2d ASIC resistant mining algorithm</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="px-6 text-center mb-10">
@@ -251,18 +250,22 @@
 	>
 		<div class="px-6">
 			<h2>Why?</h2>
-			<ul>
-				<li>Decentralized blockchain</li>
-				<li><a href="https://nodejs.org/">NodeJS</a> runtime environment</li>
-				<li>Source code written in <a href="https://www.typescriptlang.org/">Typescript</a></li>
-				<li><a href="https://en.wikipedia.org/wiki/Argon2">Argon2</a> ASIC resistant mining algorithm</li>
-				<li>Easy to implement in your project</li>
-			</ul>
+			<div class="prose prose-discord">
+				<ul>
+					<li>Decentralized blockchain</li>
+					<li><a href="https://nodejs.org/">NodeJS</a> runtime environment</li>
+					<li>Source code written in <a href="https://www.typescriptlang.org/">Typescript</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Argon2">Argon2</a> ASIC resistant mining algorithm</li>
+					<li>Easy to implement in your project</li>
+				</ul>
+			</div>
 		</div>
 		<div class="px-6">
 			<h2>Statistics</h2>
-			<Stats />
-			<p class="text-center">... and growing!</p>
+			<div class="prose prose-discord">
+				<Stats />
+				<p class="text-center">... and growing!</p>
+			</div>
 		</div>
 	</div>
 </template>
