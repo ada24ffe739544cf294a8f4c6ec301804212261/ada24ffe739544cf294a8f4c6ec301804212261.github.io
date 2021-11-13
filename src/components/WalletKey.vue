@@ -12,7 +12,7 @@
 			class="
 				block
 				overflow-hidden
-				w-60 sm:w-auto hover:text-white mr-2
+				w-60 sm:w-auto mr-2
 			">{{ props.private }}</span>
 			<button ref="copyButton" class="focus:outline-none" aria-label="Copy install command">
 				<button ref="copyButton" class="focus:outline-none" aria-label="Copy install command">

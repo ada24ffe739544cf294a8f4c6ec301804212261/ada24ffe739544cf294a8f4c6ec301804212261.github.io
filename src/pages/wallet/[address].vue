@@ -170,7 +170,7 @@
 				>
 					<Button
 						style="user-select: none;"
-						class="mx-auto bg-indigo-600 hover:bg-indigo-700"
+						class="mx-auto"
 						@click="sign_transaction"
 						text="Sign & Broadcast" />
 				</a>
@@ -194,7 +194,9 @@
 					<Button
 						class="mx-auto
 						hover:bg-red-600
-						bg-red-500"
+						bg-red-500
+						dark:bg-red-500
+						dark:hover:bg-red-600"
 						@click="del" text='Delete' />
 					<Button
 						class="mx-auto"
@@ -218,7 +220,7 @@
 				<Button text="Create Transaction" v-on:click="show = show === 'transaction' ? show='' : 'transaction'" />
 				<a v-if="explorer" :href="'https://vis.gg/#/explorer/' + wallet.address">
 					<Button
-						class="mx-auto bg-indigo-600 hover:bg-indigo-700"
+						class="mx-auto"
 						text="Check Balance" />
 				</a>
 				<router-link v-else :to="'/api?search=balance/' + wallet.address">

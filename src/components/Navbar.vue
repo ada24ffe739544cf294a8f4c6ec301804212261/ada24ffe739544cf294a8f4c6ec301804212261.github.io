@@ -26,7 +26,6 @@
 							focus:outline-none
 							focus-visible:ring-1 focus-visible:ring-white
 						"
-						active-class="bg-blueGray-600"
 					>
 						{{ link.text }}
 					</router-link>

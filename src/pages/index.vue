@@ -43,7 +43,7 @@
 		<div class="px-12">
 			<div class="text-center">
 				<h2 class="font-bold">What is Viscoin?</h2>
-				<p class="dark:text-gray-200">
+				<p class="dark:text-gray-100">
 					Viscoin is an experimental digital currency that lives on the internet. Payments can be made by anyone, to anyone, at any time, anywhere in the world, and are carried out collectively by the network with the use of peer-to-peer technology. Cryptography makes trusting a central authority obsolete when anyone with a computer can verify that a transaction is valid.
 				</p>
 			</div>
@@ -70,7 +70,7 @@
 		<div class="px-6">
 			<div class="text-center">
 				<h2 class="font-bold">Wallet</h2>
-				<p class="dark:text-gray-200">
+				<p class="dark:text-gray-100">
 					Send, receive and store Viscoin.
 				</p>
 			</div>
@@ -98,7 +98,7 @@
 		<div class="px-6">
 			<div class="text-center">
 				<h2 class="font-bold">Global currency</h2>
-				<p class="dark:text-gray-200">
+				<p class="dark:text-gray-100">
 					Viscoin is a decentralized entity that lives on the interent. It operates freely around the world, connecting people with currency at the speed of light.
 					<br>
 					Anyone with an internet connection can use Viscoin.
@@ -128,7 +128,7 @@
 		<div class="px-6">
 			<div class="text-center">
 				<h2 class="font-bold">Explorer</h2>
-				<p class="dark:text-gray-200">
+				<p class="dark:text-gray-100">
 					<a href="https://vis.gg">Vis.gg</a> is a place where you can explore Viscoin's blockchain.
 				</p>
 			</div>
@@ -154,7 +154,7 @@
 		<div class="px-6">
 			<div class="text-center">
 				<h2 class="font-bold">Contributing</h2>
-				<p class="dark:text-gray-200">
+				<p class="dark:text-gray-100">
 					Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 				</p>
 			</div>
@@ -186,7 +186,7 @@
 		<div class="px-6">
 			<div class="text-center">
 				<h2 class="font-bold">Community</h2>
-				<p class="dark:text-gray-200">
+				<p class="dark:text-gray-100">
 					Here you can ask questions, learn more about Viscoin and get involved if you want to.
 					<br>
 					We are happy to welcome you in and answer your questions.
