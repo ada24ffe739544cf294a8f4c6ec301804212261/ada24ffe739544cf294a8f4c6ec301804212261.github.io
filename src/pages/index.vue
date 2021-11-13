@@ -225,6 +225,42 @@
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
 			dark:border-black
+			bg-gray-100
+			dark:bg-gray-800
+			py-40
+		"
+	>
+		<div class="px-6 text-center mb-10">
+			<img class="w-80" src="/growth-3.svg" alt="">
+		</div>
+		<div class="px-6">
+			<div class="text-center">
+				<h2 class="">Community</h2>
+				<p>
+					Here you can ask questions, learn more about Viscoin and get involved if you want to.
+					<br>
+					We are happy to welcome you in and answer your questions.
+				</p>
+			</div>
+		</div>
+		<div class="col-span-full flex justify-center">
+			<router-link
+				to="/community"
+			>
+				<Button text="See Community" />
+			</router-link>
+		</div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			dark:border-black
 			py-20
 		"
 	>
