@@ -14,7 +14,7 @@
 			py-20
 		"
 	>
-		<div class="col-span-full px-6">
+		<div class="col-span-full px-6 pb-20">
 			<h1 class="text-center">Welcome to Viscoin</h1>
 			<h3 class="text-center">Money made decentralized.</h3>
 			<!-- <div
@@ -42,8 +42,8 @@
 	>
 		<div class="px-12">
 			<div class="text-center">
-				<h2 class="">What is Viscoin?</h2>
-				<p>
+				<h2 class="font-bold">What is Viscoin?</h2>
+				<p class="dark:text-gray-200">
 					Viscoin is an experimental digital currency that lives on the internet. Payments can be made by anyone, to anyone, at any time, anywhere in the world, and are carried out collectively by the network with the use of peer-to-peer technology. Cryptography makes trusting a central authority obsolete when anyone with a computer can verify that a transaction is valid.
 				</p>
 			</div>
@@ -69,8 +69,8 @@
 		</div>
 		<div class="px-6">
 			<div class="text-center">
-				<h2 class="">Wallet</h2>
-				<p>
+				<h2 class="font-bold">Wallet</h2>
+				<p class="dark:text-gray-200">
 					Send, receive and store Viscoin.
 				</p>
 			</div>
@@ -97,8 +97,8 @@
 	>
 		<div class="px-6">
 			<div class="text-center">
-				<h2 class="">Global currency</h2>
-				<p>
+				<h2 class="font-bold">Global currency</h2>
+				<p class="dark:text-gray-200">
 					Viscoin is a decentralized entity that lives on the interent. It operates freely around the world, connecting people with currency at the speed of light.
 					<br>
 					Anyone with an internet connection can use Viscoin.
@@ -127,8 +127,8 @@
 		</div>
 		<div class="px-6">
 			<div class="text-center">
-				<h2 class="">Explorer</h2>
-				<p>
+				<h2 class="font-bold">Explorer</h2>
+				<p class="dark:text-gray-200">
 					<a href="https://vis.gg">Vis.gg</a> is a place where you can explore Viscoin's blockchain.
 				</p>
 			</div>
@@ -153,8 +153,8 @@
 	>
 		<div class="px-6">
 			<div class="text-center">
-				<h2 class="">Contributing</h2>
-				<p>
+				<h2 class="font-bold">Contributing</h2>
+				<p class="dark:text-gray-200">
 					Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 				</p>
 			</div>
@@ -185,8 +185,8 @@
 		</div>
 		<div class="px-6">
 			<div class="text-center">
-				<h2 class="">Community</h2>
-				<p>
+				<h2 class="font-bold">Community</h2>
+				<p class="dark:text-gray-200">
 					Here you can ask questions, learn more about Viscoin and get involved if you want to.
 					<br>
 					We are happy to welcome you in and answer your questions.
@@ -214,10 +214,10 @@
 		style="background-color: #ff800008;"
 	>
 		<div class="px-6">
-			<div class="">
-				<h2 class="text-center">Technical</h2>
+			<div>
+				<h2 class="text-center font-bold">Technical</h2>
 				<div class="prose prose-discord dark:prose-light mb-10">
-					<ul>
+					<ul class="dark:text-gray-200">
 						<li>1 minute avg block time</li>
 						<li>1 Viscoin mining reward</li>
 						<li>Live since 2021-01-01 00:00:00</li>
@@ -251,7 +251,7 @@
 		<div class="px-6">
 			<h2>Why?</h2>
 			<div class="prose prose-discord dark:prose-light">
-				<ul>
+				<ul class="dark:text-gray-200">
 					<li>Decentralized blockchain</li>
 					<li><a href="https://nodejs.org/">NodeJS</a> runtime environment</li>
 					<li>Source code written in <a href="https://www.typescriptlang.org/">Typescript</a></li>
@@ -262,7 +262,7 @@
 		</div>
 		<div class="px-6">
 			<h2>Statistics</h2>
-			<div class="prose prose-discord dark:prose-light">
+			<div class="prose prose-discord dark:prose-light dark:text-gray-200">
 				<Stats />
 				<p class="text-center">... and growing!</p>
 			</div>
