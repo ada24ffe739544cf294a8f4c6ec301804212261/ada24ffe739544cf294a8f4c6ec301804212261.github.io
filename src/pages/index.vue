@@ -5,13 +5,13 @@
 			dark:prose-light
 			lg:prose-lg
 			mx-auto
-			py-20
 			h-full
-			col-span-full px-6 pb-80 pt-40
+			col-span-full px-6
+			py-20
 			drop-shadow-lg
 		">
-			<h1 class="text-center">Welcome to Viscoin</h1>
-			<h3 class="text-center">Money made decentralized</h3>
+			<h1 class="text-center drop-shadow-lg">Welcome to Viscoin</h1>
+			<h3 class="text-center drop-shadow-lg">Money made decentralized</h3>
 		</div>
 	</div>
 	<div
