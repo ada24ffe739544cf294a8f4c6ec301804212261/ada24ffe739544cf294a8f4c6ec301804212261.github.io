@@ -2,7 +2,7 @@
 	<div class="bg-gradient-to-br from-viscoin-blue-1 via-viscoin-blue-2 to-viscoin-blue-3 md:py-10">
 		<div class="
 			prose prose-discord
-			dark:prose-light
+			prose-light
 			lg:prose-lg
 			mx-auto
 			h-full
