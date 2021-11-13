@@ -30,9 +30,8 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
+			prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
@@ -55,9 +54,8 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
+			prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
@@ -87,9 +85,8 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
+			prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
@@ -114,9 +111,8 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
+			prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
@@ -145,9 +141,8 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
+			prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
@@ -175,9 +170,8 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
+			prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
@@ -209,9 +203,8 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
+			prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
@@ -247,9 +240,8 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
+			prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
