@@ -216,7 +216,7 @@
 		<div class="px-6">
 			<div class="">
 				<h2 class="text-center">Technical</h2>
-				<div class="prose prose-discord">
+				<div class="prose prose-discord dark:prose-light mb-10">
 					<ul>
 						<li>1 minute avg block time</li>
 						<li>1 Viscoin mining reward</li>
@@ -250,7 +250,7 @@
 	>
 		<div class="px-6">
 			<h2>Why?</h2>
-			<div class="prose prose-discord">
+			<div class="prose prose-discord dark:prose-light">
 				<ul>
 					<li>Decentralized blockchain</li>
 					<li><a href="https://nodejs.org/">NodeJS</a> runtime environment</li>
@@ -262,7 +262,7 @@
 		</div>
 		<div class="px-6">
 			<h2>Statistics</h2>
-			<div class="prose prose-discord">
+			<div class="prose prose-discord dark:prose-light">
 				<Stats />
 				<p class="text-center">... and growing!</p>
 			</div>
