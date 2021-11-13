@@ -96,44 +96,6 @@
 			border-t-2
 			py-40
 		"
-		style="background-color: #ff800008;"
-	>
-		<div class="px-6">
-			<div class="">
-				<h2 class="text-center">Technical</h2>
-				<p>
-					
-				</p>
-				<ul>
-					<li>1 minute avg block time</li>
-					<li>1 Viscoin mining reward</li>
-					<li>Live since 2021-01-01 00:00:00</li>
-					<li>Argon2d ASIC resistant mining algorithm</li>
-				</ul>
-			</div>
-		</div>
-		<div class="px-6 text-center mb-10">
-			<img class="w-60 lg:w-80" src="/write-16.svg" alt="">
-		</div>
-		<div class="col-span-full flex justify-center">
-			<router-link
-				to="/litepaper"
-			>
-				<Button text="Read the Litepaper" />
-			</router-link>
-		</div>
-	</div>
-	<div
-		class="
-			prose prose-discord
-			dark:prose-light
-			lg:prose-lg
-			mx-auto
-			w-full
-			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
-			border-t-2
-			py-40
-		"
 		style="background-color: #ff00ee08;"
 	>
 		<div class="px-6">
@@ -242,6 +204,44 @@
 				to="/community"
 			>
 				<Button text="See Community" />
+			</router-link>
+		</div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			py-40
+		"
+		style="background-color: #ff800008;"
+	>
+		<div class="px-6">
+			<div class="">
+				<h2 class="text-center">Technical</h2>
+				<p>
+					
+				</p>
+				<ul>
+					<li>1 minute avg block time</li>
+					<li>1 Viscoin mining reward</li>
+					<li>Live since 2021-01-01 00:00:00</li>
+					<li>Argon2d ASIC resistant mining algorithm</li>
+				</ul>
+			</div>
+		</div>
+		<div class="px-6 text-center mb-10">
+			<img class="w-60 lg:w-80" src="/write-16.svg" alt="">
+		</div>
+		<div class="col-span-full flex justify-center">
+			<router-link
+				to="/litepaper"
+			>
+				<Button text="Read the Litepaper" />
 			</router-link>
 		</div>
 	</div>
