@@ -228,18 +228,18 @@
 	</div>
 	<div
 		class="
+			prose prose-discord
 			dark:prose-light
-			prose-lg
+			lg:prose-lg
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
-			border-t-2
 			py-20
 		"
 	>
 		<div class="px-6">
 			<h2>Why?</h2>
-			<div class="prose prose-discord dark:prose-light">
+			<div>
 				<ul class="dark:text-gray-200">
 					<li>Decentralized blockchain</li>
 					<li><a href="https://nodejs.org/">NodeJS</a> runtime environment</li>
@@ -251,7 +251,7 @@
 		</div>
 		<div class="px-6">
 			<h2>Statistics</h2>
-			<div class="prose prose-discord dark:prose-light dark:text-gray-200">
+			<div class="dark:text-gray-200">
 				<Stats />
 				<p class="text-center">... and growing!</p>
 			</div>
