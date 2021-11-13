@@ -9,84 +9,226 @@
 			prose prose-discord
 			dark:prose-light
 			lg:prose-lg
-			px-6
 			mx-auto
-			pb-8
-			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			py-20
 		"
 	>
-		<div class="col-span-full">
-			<h2>Viscoin</h2>
-			<p>
-				Viscoin is an experimental digital currency that lives on the internet. Payments can be made by anyone, to anyone, at any time, anywhere in the world, and are carried out collectively by the network with the use of peer-to-peer technology. Cryptography makes trusting a central authority obsolete when anyone with a computer can verify that a transaction is valid.
-			</p>
-			<div class="flex justify-center gap-10 mb-6">
-				<!-- <a href="/Viscoin.pdf">
-					<Button text="Litepaper" />
-				</a>
-				<router-link
-					to="/docs"
-				>
-					<Button class="mx-auto" text="Documentation" />
-				</router-link> -->
-				<!-- <router-link
-					to="/api"
-				>
-					<Button text="Open API" />
-				</router-link> -->
-				<a href="https://github.com/viscoin/viscoin">
-					<Button class="bg-indigo-600 hover:bg-indigo-700" text="Github" />
-				</a>
-				<a href="https://vis.gg">
-					<Button class="bg-indigo-600 hover:bg-indigo-700" text="Explorer" />
-				</a>
-				<!-- <router-link
-					to="/wallet"
-				>
-					<Button text="Open Wallet" />
-				</router-link> -->
-			</div>
-			<div class="flex justify-center gap-10 mb-6">
+		<div class="col-span-full px-6">
+			<h1 class="text-center">Welcome to Viscoin</h1>
+			<h3 class="text-center">Money made decentralized.</h3>
+			<!-- <div
+				class="flex justify-center pt-5"
+			>
 				<router-link
 					to="/litepaper"
 				>
-					<Button text="Litepaper" />
-				</router-link>
-				<router-link
-					to="/wallet"
-				>
-					<Button text="Wallet" />
-				</router-link>
-			</div>
-			<!-- <h3>You own your money</h3>
-			<p>
-				Start sending and receiving Viscoin today. Creating a wallet is as easy as rolling a dice, quite literally. A wallet can be generated offline. Be your own bank. Chargebacks are a thing of the past. No need for middlemen. Tap into the global market at the speed of light.
-			</p>
-			<h3>Mining</h3>
-			<p>
-				Help secure the blockchain by mining. The Viscoin mining algorithm uses argon2d. Argon2 is a key derivation function that was selected as the winner of the Password Hashing Competition in July 2015. Argon2d maximizes resistance to GPU cracking attacks. Viscoin is an ASIC resistant coin, designed to be mined on regular computers.
-			</p>
-			<h3>Hosting</h3>
-			<p>
-				Become a part of the network by hosting a node. By hosting a public node you help protect the network against denial of service attacks. You also contribute to the decentralization by keeping a copy of the blockchain.
-			</p>
-			<h3>Source code</h3>
-			<p>
-				Viscoin source code is 100% Typescript. Viscoin has a target block time of 1 minute. Every time a block is mined the miner is rewarded with 1 newly generated viscoin + transaction fees from all the transactions in the block. The difficulty is adjusted every time a block is mined.
-			</p> -->
-			<!-- <div class="flex justify-center gap-10 mb-10 mt-5">
-				<a href="/Viscoin.pdf">
-					<Button text="Litepaper" />
-				</a>
-				<router-link
-					to="/docs"
-				>
-					<Button class="mx-auto" text="Documentation" />
+					<Button text="Read the Litepaper" />
 				</router-link>
 			</div> -->
 		</div>
-		<div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			dark:border-black
+			bg-gray-100
+			dark:bg-gray-800
+			py-40
+		"
+	>
+		<div class="px-12">
+			<div class="text-center">
+				<h2 class="">What is Viscoin?</h2>
+				<p>
+					Viscoin is an experimental digital currency that lives on the internet. Payments can be made by anyone, to anyone, at any time, anywhere in the world, and are carried out collectively by the network with the use of peer-to-peer technology. Cryptography makes trusting a central authority obsolete when anyone with a computer can verify that a transaction is valid.
+				</p>
+			</div>
+		</div>
+		<div class="flex justify-center align-middle">
+			<img class="w-80" src="/logo.svg" alt="">
+		</div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			dark:border-black
+			py-40
+		"
+	>
+		<div class="px-6 text-center mb-10">
+			<img class="w-80" src="/payment-16.svg" alt="">
+		</div>
+		<div class="px-6">
+			<div class="text-center">
+				<h2 class="">Wallet</h2>
+				<p>
+					Send, receive and store Viscoin.
+				</p>
+			</div>
+		</div>
+		<div class="col-span-full flex justify-center">
+			<router-link
+				to="/wallet"
+			>
+				<Button text="Open Wallet" />
+			</router-link>
+		</div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			dark:border-black
+			py-40
+		"
+	>
+		<div class="px-6">
+			<div class="">
+				<h2 class="text-center">Technical</h2>
+				<p>
+					
+				</p>
+				<ul>
+					<li>1 minute avg block time</li>
+					<li>1 Viscoin mining reward</li>
+					<li>Live since 2021-01-01 00:00:00</li>
+					<li>Argon2d ASIC resistant mining algorithm</li>
+				</ul>
+			</div>
+		</div>
+		<div class="px-6 text-center mb-10">
+			<img class="w-80" src="/write-16.svg" alt="">
+		</div>
+		<div class="col-span-full flex justify-center">
+			<router-link
+				to="/litepaper"
+			>
+				<Button text="Read the Litepaper" />
+			</router-link>
+		</div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			dark:border-black
+			bg-gray-100
+			dark:bg-gray-800
+			py-40
+		"
+	>
+		<div class="px-6">
+			<div class="text-center">
+				<h2 class="">Global currency</h2>
+				<p>
+					Viscoin is a decentralized entity that lives on the interent. It operates freely around the world, connecting people with currency at the speed of light.
+					<br>
+					Anyone with an internet connection can use Viscoin.
+				</p>
+			</div>
+		</div>
+		<div class="px-6 text-center mb-10">
+			<img class="w-80" src="/world-23.svg" alt="">
+		</div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			dark:border-black
+			py-40
+		"
+	>
+		<div class="px-6 text-center mb-10">
+			<!-- <img class="w-80" src="/world-23.svg" alt=""> -->
+			<img class="w-80" src="/blockchain.svg" alt="">
+		</div>
+		<div class="px-6">
+			<div class="text-center">
+				<h2 class="">Explorer</h2>
+				<p>
+					<a href="https://vis.gg">Vis.gg</a> is a place where you can explore Viscoin's blockchain.
+				</p>
+			</div>
+		</div>
+		<div class="col-span-full flex justify-center">
+			<a href="https://vis.gg">
+				<Button text="Open Explorer" />
+			</a>
+		</div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			dark:border-black
+			py-40
+		"
+	>
+		<div class="px-6">
+			<div class="text-center">
+				<h2 class="">Contributing</h2>
+				<p>
+					Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+				</p>
+			</div>
+		</div>
+		<div class="px-6 text-center mb-10">
+			<img class="w-80" src="/multi-agent-system.svg" alt="">
+		</div>
+		<div class="col-span-full flex justify-center">
+			<a href="https://github.com/viscoin/viscoin">
+				<Button text="View on Github" />
+			</a>
+		</div>
+	</div>
+	<div
+		class="
+			prose prose-discord
+			dark:prose-light
+			lg:prose-lg
+			mx-auto
+			w-full
+			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
+			border-t-2
+			dark:border-black
+			py-20
+		"
+	>
+		<div class="px-6">
 			<h2>Why?</h2>
 			<ul>
 				<li>Decentralized blockchain</li>
@@ -96,7 +238,7 @@
 				<li>Easy to implement in your project</li>
 			</ul>
 		</div>
-		<div>
+		<div class="px-6">
 			<h2>Statistics</h2>
 			<Stats />
 			<p class="text-center">... and growing!</p>
