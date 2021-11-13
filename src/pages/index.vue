@@ -14,7 +14,7 @@
 			py-20
 		"
 	>
-		<div class="col-span-full px-6 pb-20">
+		<div class="col-span-full px-6 pb-40 pt-20">
 			<h1 class="text-center">Welcome to Viscoin</h1>
 			<h3 class="text-center">Money made decentralized.</h3>
 			<!-- <div
@@ -40,7 +40,7 @@
 		"
 		style="background-color: #00aeff11;"
 	>
-		<div class="px-12">
+		<div class="px-6">
 			<div class="text-center">
 				<h2 class="font-bold">What is Viscoin?</h2>
 				<p class="dark:text-gray-100">
