@@ -1,31 +1,16 @@
 <template>
 	<div class="bg-gradient-to-br from-viscoin-blue-1 via-viscoin-blue-2 to-viscoin-blue-3 md:py-10">
-		<div class="max-w-3xl sm:mx-auto text-center px-8 sm:px-16 flex flex-col gap-10 md:px-12">
-			<Logo class="filter drop-shadow-lg w-60 mx-auto" />
-		</div>
-	</div>
-	<div
-		class="
+		<div class="
 			prose prose-discord
 			dark:prose-light
 			lg:prose-lg
 			mx-auto
-			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			py-20
-		"
-	>
-		<div class="col-span-full px-6 pb-40 pt-20">
+			h-full
+			col-span-full px-6 pb-80 pt-40
+		">
 			<h1 class="text-center">Welcome to Viscoin</h1>
-			<h3 class="text-center">Money made decentralized.</h3>
-			<!-- <div
-				class="flex justify-center pt-5"
-			>
-				<router-link
-					to="/litepaper"
-				>
-					<Button text="Read the Litepaper" />
-				</router-link>
-			</div> -->
+			<h3 class="text-center">Money made decentralized</h3>
 		</div>
 	</div>
 	<div
@@ -35,7 +20,6 @@
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
-			border-t-2
 			py-40
 		"
 		style="background-color: #00aeff11;"
@@ -44,7 +28,11 @@
 			<div class="text-center">
 				<h2 class="font-bold">What is Viscoin?</h2>
 				<p class="dark:text-gray-100">
-					Viscoin is an experimental digital currency that lives on the internet. Payments can be made by anyone, to anyone, at any time, anywhere in the world, and are carried out collectively by the network with the use of peer-to-peer technology. Cryptography makes trusting a central authority obsolete when anyone with a computer can verify that a transaction is valid.
+					Viscoin is an experimental digital currency that lives on the internet.
+					<br>
+					Payments can be made by anyone, to anyone, at any time, anywhere in the world, and are carried out collectively by the network with the use of peer-to-peer technology.
+					<br>
+					Cryptography makes trusting a central authority obsolete when anyone with a computer can verify that a transaction is valid.
 				</p>
 			</div>
 		</div>
