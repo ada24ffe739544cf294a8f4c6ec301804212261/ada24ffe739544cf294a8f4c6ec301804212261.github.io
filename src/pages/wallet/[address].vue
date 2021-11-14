@@ -231,8 +231,8 @@
 				</router-link>
 			</div>
 			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-center w-full my-5
-				pb-20
-				sm:pb-0
+				pb-40
+				sm:pb-20
 			">
 				<Button text="Private Key" v-on:click="show = show === 'private_key' ? show='' : 'private_key'" />
 			</div>
