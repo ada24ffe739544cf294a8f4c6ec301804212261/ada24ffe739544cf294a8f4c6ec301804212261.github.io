@@ -89,8 +89,8 @@
 				v-if="show==='transaction'"
 				class="
 					max-w-3xl sm:mx-auto sm:px-16 flex flex-col md:px-12
-					pb-20
-					sm:pb-0
+					pb-40
+					sm:pb-20
 				"
 			>
 				<div class="flex flex-col sm:flex-row justify-between mb-10">
@@ -163,12 +163,11 @@
 						dark:hover:text-white
 						resize-none
 						text-xs
-						mb-6
 					"
 					v-model=transaction_str
 				name="" id="" cols="30" rows="6"></textarea>
 				<a v-if="explorer && transaction_json" :href="'https://vis.gg/#/search/' + transaction_json"
-					class="pb-10"
+					class="mt-6"
 				>
 					<Button
 						style="user-select: none;"
@@ -177,7 +176,7 @@
 						text="Sign & Broadcast" />
 				</a>
 				<router-link v-else-if=transaction_json :to="'/api?search=' + transaction_json"
-					class="pb-10"
+					class="mt-6"
 				>
 					<Button
 						style="user-select: none;"
@@ -232,8 +231,8 @@
 				</router-link>
 			</div>
 			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-center w-full my-5
-				pb-40
-				sm:pb-20
+				pb-20
+				sm:pb-0
 			">
 				<Button text="Private Key" v-on:click="show = show === 'private_key' ? show='' : 'private_key'" />
 			</div>
