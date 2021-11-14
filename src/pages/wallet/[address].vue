@@ -50,7 +50,7 @@
 				class="max-w-screen-sm
 				filter drop-shadow-lg mx-auto
 				" :address=wallet?.address />
-			<div style="user-select: none;" v-if="show === '' && qr_address" class="flex justify-center mt-10 mb-20">
+			<div style="user-select: none;" v-if="show === '' && qr_address" class="flex justify-center mt-10 mb-10">
 				<QRCode :data=qr_address />
 			</div>
 		</div>
