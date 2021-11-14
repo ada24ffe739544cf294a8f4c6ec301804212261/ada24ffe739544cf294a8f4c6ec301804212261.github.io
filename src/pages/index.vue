@@ -49,6 +49,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
+			dark:border-t-gray-700
 			py-32
 		"
 		style="background-color: #00ff9906;"
@@ -80,6 +81,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
+			dark:border-t-gray-700
 			py-32
 		"
 		style="background-color: #ff00ee06;"
@@ -106,6 +108,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
+			dark:border-t-gray-700
 			py-32
 		"
 		style="background-color: #00ff6a06;"
@@ -136,6 +139,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
+			dark:border-t-gray-700
 			py-32
 		"
 		style="background-color: #ff190006;"
@@ -165,6 +169,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
+			dark:border-t-gray-700
 			py-32
 		"
 		style="background-color: #9000ff06;"
@@ -198,6 +203,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
+			dark:border-t-gray-700
 			py-32
 		"
 		style="background-color: #ff800006;"
