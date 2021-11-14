@@ -206,13 +206,13 @@
 			<div class="text-center">
 				<h2 class="text-center font-bold">Technical</h2>
 				<p class="dark:text-gray-100">
-					1 minute avg block time.
+					1 minute avg block time
 					<br>
-					1 Viscoin mining reward.
+					1 Viscoin mining reward
 					<br>
 					Live since 2021-01-01 00:00:00
 					<br>
-					Argon2d ASIC resistant mining algorithm
+					Argon2d CPU mining algorithm
 				</p>
 			</div>
 		</div>
