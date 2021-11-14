@@ -11,7 +11,6 @@
 			lg:prose-lg
 			px-6
 			mx-auto
-			pb-8
 			w-full
 		"
 	>
