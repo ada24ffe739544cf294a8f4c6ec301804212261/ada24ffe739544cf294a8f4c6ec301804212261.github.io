@@ -229,7 +229,7 @@
 						text="Check Balance" />
 				</router-link>
 			</div>
-			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-center w-full my-5 pb-10">
+			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-center w-full my-5 pb-40">
 				<Button text="Private Key" v-on:click="show = show === 'private_key' ? show='' : 'private_key'" />
 			</div>
 		</div>

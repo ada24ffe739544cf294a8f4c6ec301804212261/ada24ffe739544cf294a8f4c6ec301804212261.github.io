@@ -2,17 +2,15 @@
     <button
         class="
             bg-gray-200
-            text-gray-800
-            hover:bg-gray-300
-            hover:text-black
-            dark:bg-gray-800
-            dark:text-gray-200
-            dark:hover:bg-gray-900
-            dark:hover:text-white
-            ring-1
-            ring-inset
-            ring-gray-600
-            dark:ring-gray-400
+			text-gray-800
+			hover:bg-gray-300
+			hover:text-black
+			dark:bg-gray-800
+			dark:text-gray-200
+			dark:hover:bg-gray-700
+			dark:hover:text-white
+			focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white dark:focus:ring-black
+            drop-shadow-lg
             outline-none
             rounded-md
             py-2
@@ -23,7 +21,6 @@
             mt-2.5
             font-semibold
         "
-        active-class="bg-blueGray-600"
     >
         {{ props.text }}
     </button>

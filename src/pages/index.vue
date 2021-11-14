@@ -51,7 +51,7 @@
 			border-t-2
 			py-32
 		"
-		style="background-color: #00ff9908;"
+		style="background-color: #00ff9906;"
 	>
 		<div class="px-6 text-center mb-10">
 			<img class="w-60 lg:w-80" src="/payment-16.svg" alt="">
@@ -82,7 +82,7 @@
 			border-t-2
 			py-32
 		"
-		style="background-color: #ff00ee08;"
+		style="background-color: #ff00ee06;"
 	>
 		<div class="px-6">
 			<div class="text-center">
@@ -108,7 +108,7 @@
 			border-t-2
 			py-32
 		"
-		style="background-color: #00ff6a08;"
+		style="background-color: #00ff6a06;"
 	>
 		<div class="px-6 text-center mb-10">
 			<!-- <img class="w-60 lg:w-80" src="/world-23.svg" alt=""> -->
@@ -138,7 +138,7 @@
 			border-t-2
 			py-32
 		"
-		style="background-color: #ff190008;"
+		style="background-color: #ff190006;"
 	>
 		<div class="px-6">
 			<div class="text-center">
@@ -167,7 +167,7 @@
 			border-t-2
 			py-32
 		"
-		style="background-color: #9000ff08;"
+		style="background-color: #9000ff06;"
 	>
 		<div class="px-6 text-center mb-10">
 			<img class="w-60 lg:w-80" src="/growth-3.svg" alt="">
@@ -200,7 +200,7 @@
 			border-t-2
 			py-32
 		"
-		style="background-color: #ff800008;"
+		style="background-color: #ff800006;"
 	>
 		<div class="px-6">
 			<div class="text-center">
@@ -243,14 +243,11 @@
 		"
 	>
 		<div class="px-6">
-			<h2>External</h2>
+			<h2>Viscoin</h2>
 			<div class="dark:text-gray-200">
 				<ul>
 					<li>
 						<a href="https://github.com/viscoin/viscoin">Github</a>
-					</li>
-					<li>
-						<a href="https://www.npmjs.com/package/viscoin">Package npm</a>
 					</li>
 					<li>
 						<a href="https://www.reddit.com/r/viscoin">Reddit</a>
@@ -261,11 +258,14 @@
 					<li>
 						<a href="https://vis.gg">Explorer</a>
 					</li>
+					<li>
+						<a href="https://www.npmjs.com/package/viscoin">npm package</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="px-6">
-			<h2>Internal</h2>
+			<h2>Pages</h2>
 			<div class="dark:text-gray-200">
 				<ul>
 					<li>

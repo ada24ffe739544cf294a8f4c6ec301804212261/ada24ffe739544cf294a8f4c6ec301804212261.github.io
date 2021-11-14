@@ -4,8 +4,18 @@
 		:to="'/wallet/' + props.address"
 	>
 		<code class="
-			bg-indigo-600
-			text-gray-200 p-4
+			bg-gray-200
+			text-gray-800
+			hover:bg-gray-300
+			hover:text-black
+			dark:bg-gray-800
+			dark:text-gray-200
+			dark:hover:bg-gray-700
+			dark:hover:text-white
+			focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white dark:focus:ring-black
+
+			drop-shadow-lg
+			p-4
 			lg:text-lg sm:text-sm text-xs
 			rounded-md shadow flex items-center"
 			>
@@ -13,14 +23,16 @@
 			style="white-space: nowrap;"
 			class="block
 			overflow-hidden
-			w-60 sm:w-auto hover:text-white mr-2">{{ props.address }}</span>
+			drop-shadow-lg
+			font-bold
+			w-60 sm:w-auto mr-2">{{ props.address }}</span>
 			<router-link
 				to=""
 			>
-				<button ref="copyButton" class="focus:outline-none" aria-label="Copy install command">
+				<button ref="copyButton" class="drop-shadow-lg focus:outline-none" aria-label="Copy install command">
 					<heroicons-outline-clipboard-copy
 						v-if="!copied"
-						class="inline-block fill-current text-gray-200 cursor-pointer hover:text-white mb-1"
+						class="inline-block fill-current cursor-pointer hover:text-white mb-1"
 						aria-hidden="true"
 						@click="copyInstallCmd"
 					/>

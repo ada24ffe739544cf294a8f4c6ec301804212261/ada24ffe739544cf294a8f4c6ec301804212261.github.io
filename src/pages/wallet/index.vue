@@ -102,7 +102,8 @@
 		<div
 			v-if="!show_import && wallets.length"
 			class="max-w-3xl sm:mx-auto text-center px-8 sm:px-16 flex gap-10 py-5 md:px-12
-			justify-center"
+			justify-center
+			pb-20"
 		>
 			<Button
 				@click="export_wallets"
