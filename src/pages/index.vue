@@ -286,7 +286,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="px-6">
+		<div class="px-6 col-span-full sm:col-span-1">
 			<h2>Statistics</h2>
 			<div class="dark:text-gray-200">
 				<Stats />
