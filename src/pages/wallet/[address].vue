@@ -89,6 +89,8 @@
 				v-if="show==='transaction'"
 				class="
 					max-w-3xl sm:mx-auto sm:px-16 flex flex-col md:px-12
+					pb-20
+					sm:pb-0
 				"
 			>
 				<div class="flex flex-col sm:flex-row justify-between mb-10">
@@ -229,7 +231,10 @@
 						text="Check Balance" />
 				</router-link>
 			</div>
-			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-center w-full my-5 pb-40">
+			<div v-if="show === ''" style="user-select: none;" class="flex flex-row justify-center w-full my-5
+				pb-40
+				sm:pb-20
+			">
 				<Button text="Private Key" v-on:click="show = show === 'private_key' ? show='' : 'private_key'" />
 			</div>
 		</div>
