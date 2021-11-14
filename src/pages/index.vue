@@ -229,17 +229,20 @@
 	</div>
 	<div
 		class="
+			prose prose-discord
 			dark:prose-light
+			lg:prose-lg
 			mx-auto
 			w-full
-			grid gap-y-6
-			sm:grid sm:grid-cols-2 sm:gap-x-12 sm:max-w-7xl
-			xl:grid xl:grid-cols-3 xl:gap-x-12 xl:max-w-7xl
+			grid gap-y-6 grid-cols-2 max-w-7xl
+			md:grid md:grid-cols-3 md:gap-x-12 md:max-w-7xl
 			py-32
-			px-20
+			px-6
+			md:px-12
+			lg:px-24
 		"
 	>
-		<div class="px-6 prose prose-discord">
+		<div class="px-6">
 			<h2>External</h2>
 			<div class="dark:text-gray-200">
 				<ul>
@@ -261,7 +264,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="px-6 prose prose-discord">
+		<div class="px-6">
 			<h2>Internal</h2>
 			<div class="dark:text-gray-200">
 				<ul>
@@ -283,7 +286,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="px-6 prose prose-discord">
+		<div class="px-6">
 			<h2>Statistics</h2>
 			<div class="dark:text-gray-200">
 				<Stats />
