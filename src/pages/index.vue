@@ -21,7 +21,7 @@
 			mx-auto
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
-			py-40
+			py-32
 		"
 		style="background-color: #00aeff11;"
 	>
@@ -49,7 +49,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			py-40
+			py-32
 		"
 		style="background-color: #00ff9908;"
 	>
@@ -80,7 +80,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			py-40
+			py-32
 		"
 		style="background-color: #ff00ee08;"
 	>
@@ -106,7 +106,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			py-40
+			py-32
 		"
 		style="background-color: #00ff6a08;"
 	>
@@ -136,7 +136,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			py-40
+			py-32
 		"
 		style="background-color: #ff190008;"
 	>
@@ -165,7 +165,7 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			py-40
+			py-32
 		"
 		style="background-color: #9000ff08;"
 	>
@@ -198,21 +198,22 @@
 			w-full
 			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
 			border-t-2
-			py-40
+			py-32
 		"
 		style="background-color: #ff800008;"
 	>
 		<div class="px-6">
-			<div>
+			<div class="text-center">
 				<h2 class="text-center font-bold">Technical</h2>
-				<div class="prose prose-discord dark:prose-light mb-10">
-					<ul class="dark:text-gray-200">
-						<li>1 minute avg block time</li>
-						<li>1 Viscoin mining reward</li>
-						<li>Live since 2021-01-01 00:00:00</li>
-						<li>Argon2d ASIC resistant mining algorithm</li>
-					</ul>
-				</div>
+				<p class="dark:text-gray-100">
+					1 minute avg block time.
+					<br>
+					1 Viscoin mining reward.
+					<br>
+					Live since 2021-01-01 00:00:00
+					<br>
+					Argon2d ASIC resistant mining algorithm
+				</p>
 			</div>
 		</div>
 		<div class="px-6 text-center mb-10">
@@ -228,32 +229,64 @@
 	</div>
 	<div
 		class="
-			prose prose-discord
 			dark:prose-light
-			lg:prose-lg
 			mx-auto
 			w-full
-			xl:grid xl:grid-cols-2 xl:gap-x-12 xl:max-w-7xl
-			py-20
+			grid gap-y-6
+			sm:grid sm:grid-cols-2 sm:gap-x-12 sm:max-w-7xl
+			xl:grid xl:grid-cols-3 xl:gap-x-12 xl:max-w-7xl
+			py-32
+			px-20
 		"
 	>
-		<div class="px-6">
-			<h2>Why?</h2>
-			<div>
-				<ul class="dark:text-gray-200">
-					<li>Decentralized blockchain</li>
-					<li><a href="https://nodejs.org/">NodeJS</a> runtime environment</li>
-					<li>Source code written in <a href="https://www.typescriptlang.org/">Typescript</a></li>
-					<li><a href="https://en.wikipedia.org/wiki/Argon2">Argon2</a> ASIC resistant mining algorithm</li>
-					<li>Easy to implement in your project</li>
+		<div class="px-6 prose prose-discord">
+			<h2>External</h2>
+			<div class="dark:text-gray-200">
+				<ul>
+					<li>
+						<a href="https://github.com/viscoin/viscoin">Github</a>
+					</li>
+					<li>
+						<a href="https://www.npmjs.com/package/viscoin">Package npm</a>
+					</li>
+					<li>
+						<a href="https://www.reddit.com/r/viscoin">Reddit</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/channel/UCmbUxFHp_FG3gtRLG2yZ1tw">Youtube</a>
+					</li>
+					<li>
+						<a href="https://vis.gg">Explorer</a>
+					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="px-6">
+		<div class="px-6 prose prose-discord">
+			<h2>Internal</h2>
+			<div class="dark:text-gray-200">
+				<ul>
+					<li>
+						<router-link to="/litepaper">Litepaper</router-link>
+					</li>
+					<li>
+						<router-link to="/wallet">Wallet</router-link>
+					</li>
+					<li>
+						<router-link to="/docs">Documentation</router-link>
+					</li>
+					<li>
+						<router-link to="/community">Community</router-link>
+					</li>
+					<li>
+						<router-link to="/api">API</router-link>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="px-6 prose prose-discord">
 			<h2>Statistics</h2>
 			<div class="dark:text-gray-200">
 				<Stats />
-				<p class="text-center">... and growing!</p>
 			</div>
 		</div>
 	</div>
