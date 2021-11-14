@@ -82,7 +82,10 @@
 			title="address (public)"
 			class="max-w-screen-sm" :address=wallet.address />
 	</div>
-	<div style="user-select: none;" class="mb-20">
+	<div style="user-select: none;" class="
+		mb-40
+		sm:mb-20
+	">
 		<div
 			v-if="!show_import"
 			class="max-w-3xl sm:mx-auto text-center px-8 sm:px-16 flex gap-10 pt-10 md:px-12
